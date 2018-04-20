@@ -1,6 +1,6 @@
 {
   "name": "transporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Transport published data between multiple services",
   "main": "index.js",
   "scripts": {
