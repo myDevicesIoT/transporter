@@ -3,20 +3,21 @@
 Basic support for multiple transport between services for pushing data.
 
 
-Example
+### Example
 
 ```javascript
-var dispatcher = require('./dispatcher');
+const Transporter = require('transporter');
 
-var gcc = require('./gcc');
+Transporter.add(Transporter.Redis, { host: 'localhost' });
+Transporter.add(Transporter.Kinesis, { host: 'localhost' });
 
-dispatcher.add(gcc.CloudPubSub, { host: 'localhost' });
-
-dispatcher.add(require('./rabbit').RabbitMQ, { host: 'localhost' });
-
-// will publish to GCC and Rabbit 
-dispatcher.publish('message 1', function(){
+// will publish to Kinesis and Redis 
+Transporter.publish('message 1', function(){
     //callback
 });
 
 ```
+
+### Adapters
+
+- [Google PubSub](https://github.com/myDevicesIoT/pubsub-transporter)
