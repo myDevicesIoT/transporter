@@ -1,6 +1,6 @@
 {
-  "name": "transporter",
-  "version": "1.2.4",
+  "name": "@mydevices/transporter",
+  "version": "1.2.5",
   "description": "Transport published data between multiple services",
   "main": "index.js",
   "scripts": {
