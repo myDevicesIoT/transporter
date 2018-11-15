@@ -21,3 +21,4 @@ Transporter.publish('message 1', function(){
 ### Adapters
 
 - [Google PubSub](https://github.com/myDevicesIoT/pubsub-transporter)
+- [RabbitMQ] (https://github.com/myDevicesIoT/rabbit-transporter)
