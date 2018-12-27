@@ -87,4 +87,14 @@ describe('Transporter Tests', () => {
     await new Promise(resolve => setTimeout(resolve, 1000));
     Transporter.publish({});
   });
+
+  it('Should remove a transport', async () => {
+    Transporter
+      .add(TestExtension, { emitErrs: true })
+      .add(TestExtension, { name: 'AnotherExtension', opt: 'some opt', emitErrs: true });
+
+    Transporter.publish({});
+    Transporter.remove('AnotherExtension');
+    Transporter.publish({});
+  });
 });
