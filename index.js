@@ -1,6 +1,5 @@
 const transporter = exports;
 
-
 transporter.Transport = require('./lib/transport').Transport;
 transporter.Publisher = require('./lib/publisher').Publisher;
 transporter.Redis = require('./lib/redis').Redis;
@@ -17,7 +16,8 @@ const methods = [
   'add',
   'remove',
   'handleExceptions',
-  'unhandleExceptions'
+  'unhandleExceptions',
+  'on'
 ];
 
 methods.forEach((method) => {
