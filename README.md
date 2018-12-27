@@ -22,3 +22,7 @@ Transporter.publish('message 1', function(){
 
 - [Google PubSub](https://github.com/myDevicesIoT/pubsub-transporter)
 - [RabbitMQ](https://github.com/myDevicesIoT/rabbit-transporter)
+
+### Testing
+
+Install all dependencies and use `npm test`
