@@ -10,14 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.186.0",
-    "kafka-node": "^2.3.2",
+    "kafka-node": "^5.0.0",
     "lodash": "^4.17.4",
-    "redis": "^2.8.0",
+    "redis": "^4.6.5",
     "util": "^0.10.3"
   },
   "devDependencies": {
-    "eslint": "^4.16.0",
-    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.8.0"
   }
 }
